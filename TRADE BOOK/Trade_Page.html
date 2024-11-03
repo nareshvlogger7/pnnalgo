@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trade Page</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    const App = () => {
+      const handleStartTrade = () => {
+        window.location.href = '/start-trade';
+      };
+
+      return (
+        <div>
+          <h1>Welcome to the Trade Page</h1>
+          <button onClick={handleStartTrade}>Start Trade</button>
+        </div>
+      );
+    };
+
+    ReactDOM.render(<App/>, document.getElementById('root'));
+  </script>
+</body>
+</html>
